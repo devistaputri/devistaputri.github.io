@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Devista Putri Sahadah">
+<meta name="dcterms.date" content="2024-01-23">
+
+<title>Pengaruh Jumlah Penduduk terhadap Impor di Indonesia</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Pengaruh Jumlah Penduduk terhadap Impor di Indonesia</h1>
+<p class="subtitle lead">Metode Penelitian Politeknik APP Jakarta</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Devista Putri Sahadah </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 23, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="poltekapp.jpg" class="img-fluid"></p>
+<section id="pendahuluan" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+<section id="latar-belakang" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar belakang</h3>
+<p>Pertumbuhan penduduk yang tinggi pada suatu negara pastinya diiringi dengan permintaan yang meningkat akan barang dan jasa. Indonesia sebagai negara yang menduduki peringkat keempat sebagai negara dengan populasi terbesar di Indonesia membuatnya harus memenuhi pasokan akan barang dan jasa yang dibutuhkan oleh penduduknya. Tingginya permintaan ini tidak selalu dapat dipenuhi oleh produksi yang dilakukan di dalam negeri, sehingga harus dilakukan kegiatan impor. Impor yang dilakukan oleh suatu negara ini memberikan manfaat pada perekonomian, seperti memperluas pilihan konsumen, meningkatkan efisiensi produksi, dan menurunkan harga barang. Di lain sisi, impor juga memiliki dampak buruk, seperti defisit neraca perdagangan, ketergantungan terhadap negara lain, dan penurunan daya saing produk lokal.</p>
+<p>Oleh sebab itu, mengetahui faktor-faktor yang mempengaruhi impor di Indonesia sangatlah penting, salah satunya adalah populasi. Beberapa mekanisme dari populasi yang bias mempengaruhi impor, seperti skala pasar, preferensi konsumen, struktur pendapatan, dan tingkat urbanisasi. Penilitian ini diharapkan dapat menjadi kontribusi bagi pengembangan ilmu ekonomi, khususnya perdagangan internasional.</p>
+</section>
+<section id="ruang-lingkup" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="ruang-lingkup"><span class="header-section-number">1.2</span> Ruang lingkup</h3>
+<p>penelitian ini mengkaji pengaruh jumlah penduduk terhadap nilai impor di Indonesia pada tahun 2020. Penelitian ini menggunakan data resmi dari Badan Pusat Statistik (BPS) mengenai jumlah penduduk dan nilai impor pada 32 provinsi di Indonesia. Penelitian ini menggunakan metode Ordinary Least Square (OLS) atau regresi univariat.</p>
+</section>
+<section id="rumusan-masalah" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan masalah</h3>
+<ol type="1">
+<li><p>Apakah jumlah penduduk mempengaruhi impor di Indonesia ?</p></li>
+<li><p>Bagaimana hubungan antara jumlah penduduk dan impor di Indonesia?</p></li>
+</ol>
+</section>
+<section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan manfaat penelitian</h3>
+<p><strong>Tujuan penelitian</strong></p>
+<p>Tujuan umum penelitian ini adalah untuk mengetahui pengaruh jumlah penduduk terhadap nilai impor di Indonesia pada tahun 2020.</p>
+<p>Tujuan teoretis penelitian ini adalah untuk menguji hipotesis tentang hubungan antara jumlah penduduk dan nilai impor di Indonesia, serta untuk memberikan kontribusi pada pengembangan ilmu ekonomi dan perdagangan internasional.</p>
+<p>Tujuan praktis penelitian ini adalah untuk memberikan informasi dan rekomendasi kepada pemerintah dan pelaku usaha tentang faktor-faktor yang mempengaruhi nilai impor di Indonesia, serta untuk meningkatkan kesejahteraan masyarakat melalui kebijakan perdagangan yang tepat.</p>
+<p><strong>Manfaat penelitian</strong></p>
+<p>Manfaat teoretis penelitian ini adalah untuk memperkaya pengetahuan dan pemahaman tentang fenomena ekonomi dan perdagangan di Indonesia, khususnya mengenai pengaruh jumlah penduduk terhadap nilai impor.</p>
+<p>Manfaat praktis penelitian ini adalah untuk memberikan masukan dan saran kepada pemerintah dan pelaku usaha tentang strategi dan kebijakan perdagangan yang dapat meningkatkan daya saing dan kinerja impor Indonesia, serta untuk mendorong pertumbuhan ekonomi dan pembangunan nasional.</p>
+</section>
+<section id="package" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="package"><span class="header-section-number">1.5</span> Package</h3>
+<p>Packages yang digunakan antara lain sebagai berikut:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(writexl)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="studi-pustaka" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi pustaka</h2>
+<p><strong>Populasi Indonesia</strong></p>
+<p>Populasi Indonesia adalah jumlah penduduk yang tinggal di wilayah negara Indonesia. Pada tahun 2024 sendiri populasi Indonesia diperkirakan mencapai 271,9 juta jiwa dan menjadikannya sebagai negara dengan populasi terbesar keempat di dunia. Populasi Indonesia sendiri sangatlah beragam, mulai dari keberagaman suku, agama, bahasa, dan budaya. Seiring dengan perkembangan sosial, ekonomi, politik, dan lingkungan, populasi Indonesia juga mengalami perubahan. Ada beberapa aspek penting yang terkait dengan populasi Indonesia, seperti densitas dan distribusi penduduk, struktur penduduk, pertumbuhan penduduk, dan indikator demografi.</p>
+<p><strong>Impor Indonesia</strong></p>
+<p>Negara asal utama impor Indonesia adalah Tiongkok dengan nilai USD 39,35 miliar (30,91 persen), diikuti oleh Jepang USD 10,63 miliar (8,35 persen), dan Singapura USD 8,12 miliar (6,38 persen). Dilihat dari golongan penggunaan barang ekonomi, impor Indonesia masih didominasi oleh bahan baku/penolong sebesar USD 103,21 miliar (72,90 persen), diikuti oleh barang modal USD 23,70 miliar (16,74 persen) dan barang konsumsi USD 14,66 miliar (10,35 persen).</p>
+<p>Menurut Badan Pusat Statistik (BPS), impor Indonesia pada tahun 2020 mencapai USD 141,57 miliar, yang terdiri dari impor migas USD 14,26 miliar dan impor nonmigas USD 127,31 miliar. Jika dibandingkan dengan tahun 2019, nilai impor turun 17,34 persen, disebabkan oleh penurunan impor migas 34,86 persen dan impor nonmigas 14,78 persen.</p>
+<p>Impor Indonesia dipengaruhi oleh berbagai faktor, seperti kondisi ekonomi global dan domestik, permintaan pasar, kurs mata uang, harga komoditas, dan kebijakan pemerintah. Pada tahun 2020, impor Indonesia mengalami dampak negatif dari pandemi COVID-19, yang menurunkan aktivitas perdagangan, produksi, dan konsumsi di dalam dan luar negeri.</p>
+</section>
+<section id="metode-penelitian" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">3</span> Metode penelitian</h2>
+<section id="data" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h3>
+<table class="table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Provinsi</th>
+<th>Jumlah penduduk(juwa)</th>
+<th>Nilai Impor(juta USD)</th>
+<th>x</th>
+<th>y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DKI.Jakarta</td>
+<td>10.770.496</td>
+<td>18.787.76</td>
+<td>7.032235704</td>
+<td>4.273875004</td>
+</tr>
+<tr class="even">
+<td>Jawa Barat</td>
+<td>48.795.636</td>
+<td>13.992,77</td>
+<td>7,688380983</td>
+<td>4,145903696</td>
+</tr>
+<tr class="odd">
+<td>Jawa Timur</td>
+<td>39.315.027</td>
+<td>9.299,57</td>
+<td>7,594558578</td>
+<td>3,968462868</td>
+</tr>
+<tr class="even">
+<td>Jawa Tengah</td>
+<td>34.622.815</td>
+<td>5.661,70</td>
+<td>7,539362375</td>
+<td>3,752946853</td>
+</tr>
+<tr class="odd">
+<td>Banten</td>
+<td>17.972.962</td>
+<td>9.621,61</td>
+<td>7,254619656</td>
+<td>3,983247749</td>
+</tr>
+<tr class="even">
+<td>Sumatera Utara</td>
+<td>14.284.128</td>
+<td>7.304,11</td>
+<td>7,154853733</td>
+<td>3,863567305</td>
+</tr>
+<tr class="odd">
+<td>Sulawesi Selatan</td>
+<td>13.992.423</td>
+<td>5.796,30</td>
+<td>7,145892926</td>
+<td>3,763150855</td>
+</tr>
+<tr class="even">
+<td>Sumatera Selatan</td>
+<td>13.803.484</td>
+<td>4.241,46</td>
+<td>7,139988716</td>
+<td>3,627515376</td>
+</tr>
+<tr class="odd">
+<td>Kalimantan Selatan</td>
+<td>6.678.750</td>
+<td>3.852,43</td>
+<td>6,824695187</td>
+<td>3,585734756</td>
+</tr>
+<tr class="even">
+<td>Sulawesi Tengah</td>
+<td>4.968.622</td>
+<td>3.537,99</td>
+<td>6,696235958</td>
+<td>3,548756601</td>
+</tr>
+<tr class="odd">
+<td>Papua</td>
+<td>4.601.123</td>
+<td></td>
+<td>2.110,81</td>
+<td>6,662863843</td>
+</tr>
+<tr class="even">
+<td>Kalimantan Timur</td>
+<td>4.524.664</td>
+<td>6.791,29</td>
+<td>6,655586334</td>
+<td>3,831952276</td>
+</tr>
+<tr class="odd">
+<td>Bali</td>
+<td>4.288.295</td>
+<td>4.971,65</td>
+<td>6,632284654</td>
+<td>3,696500547</td>
+</tr>
+<tr class="even">
+<td>Sulawesi Utara</td>
+<td>3.876.939</td>
+<td>4.259,67</td>
+<td>6,588488968</td>
+<td>3,629375955</td>
+</tr>
+<tr class="odd">
+<td>Kalimantan Utara</td>
+<td>3.245.197</td>
+<td>2.578,60</td>
+<td>6,511241066</td>
+<td>3,411383978</td>
+</tr>
+<tr class="even">
+<td>Maluku</td>
+<td>3.044.702</td>
+<td>2.372,34</td>
+<td>6,483544793</td>
+<td>3,375176932</td>
+</tr>
+<tr class="odd">
+<td>Nusa Tenggara Tim</td>
+<td>2.555.000</td>
+<td>2.749,63</td>
+<td>6,407390904</td>
+<td>3,439274258</td>
+</tr>
+<tr class="even">
+<td>Jambi</td>
+<td>3.531.108</td>
+<td>2.660,71</td>
+<td>6,547911001</td>
+<td>3,424997542</td>
+</tr>
+<tr class="odd">
+<td>Bengkulu</td>
+<td>2.992.000</td>
+<td>2.489,86</td>
+<td>6,475961589</td>
+<td>3,396174928</td>
+</tr>
+<tr class="even">
+<td>Gorontalo</td>
+<td>1.360.843</td>
+<td>2.307,81</td>
+<td>6,133808024</td>
+<td>3,363200051</td>
+</tr>
+<tr class="odd">
+<td>Maluku Utara</td>
+<td>1.256.302</td>
+<td>3.356,74</td>
+<td>6,099094051</td>
+<td>3,525917704</td>
+</tr>
+<tr class="even">
+<td>Sumatera Barat</td>
+<td>5.845.302</td>
+<td>2.170,30</td>
+<td>6,766806954</td>
+<td>3,33651977</td>
+</tr>
+<tr class="odd">
+<td>Lampung</td>
+<td>8.481.736</td>
+<td>3.181,46</td>
+<td>6,928484751</td>
+<td>3,502626467</td>
+</tr>
+<tr class="even">
+<td>Nusa Tenggara Bar</td>
+<td>6.285.160</td>
+<td>2.235,43</td>
+<td>6,798316338</td>
+<td>3,349361075</td>
+</tr>
+<tr class="odd">
+<td>Kalimantan Tengah</td>
+<td>2.496.295</td>
+<td>2.973,16</td>
+<td>6,397295907</td>
+<td>3,473218281</td>
+</tr>
+<tr class="even">
+<td>Sulawesi Tenggara</td>
+<td>2.527.801</td>
+<td>2.829,21</td>
+<td>6,402742881</td>
+<td>3,451665184</td>
+</tr>
+<tr class="odd">
+<td>Aceh</td>
+<td>5.090.147</td>
+<td>2.520,92</td>
+<td>6,706730325</td>
+<td>3,401559064</td>
+</tr>
+<tr class="even">
+<td>Papua Barat</td>
+<td>1.095.057</td>
+<td>3.217,90</td>
+<td>6,039436726</td>
+<td>3,507572544</td>
+</tr>
+<tr class="odd">
+<td>Riau</td>
+<td>6.464.850</td>
+<td>3.049,30</td>
+<td>6,810558453</td>
+<td>3,484200154</td>
+</tr>
+<tr class="even">
+<td>Bangka Belitung</td>
+<td>1.503.921</td>
+<td>2.464,74</td>
+<td>6,177225024</td>
+<td>3,391771113</td>
+</tr>
+<tr class="odd">
+<td>Kepulauan Riau</td>
+<td>2.150.329</td>
+<td>1.994,01</td>
+<td>6,332504912</td>
+<td>3,299727332</td>
+</tr>
+</tbody>
+</table>
+<p>Data yang digunakan dalam penelitian ini adalah data resmi dari Badan Pusat Statistik (BPS) Indonesia mengenai jumlah penduduk dan nilai impor per provinsi di Indonesia pada tahun 2020. Kemudian peneliti melakukan log pada data agar mendapatkan hubungan yang linier, dan menghasilkan data x dari data jumlah penduduk dan y dari data nilai impor.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#import dataset</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>dev<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">'dev.xlsx'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dev)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  provinsi       `jumlah penduduk(Jiwa) (X)` nilai impor(juta USD)…¹     x     y
+  &lt;chr&gt;                                &lt;dbl&gt;                   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 DKI Jakarta                       10770496                  18788.  7.03  4.27
+2 Jawa Barat                        48795636                  13993.  7.69  4.15
+3 Jawa Timur                        39315027                   9300.  7.59  3.97
+4 Jawa Tengah                       34622815                   5662.  7.54  3.75
+5 Banten                            17972962                   9622.  7.25  3.98
+6 Sumatera Utara                    14284128                   7304.  7.15  3.86
+# ℹ abbreviated name: ¹​`nilai impor(juta USD) (Y)`</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"ggplot2"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"readxl"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"dplyr"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dev,<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>y)) <span class="sc">+</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"#EEA2AD"</span>,<span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Hubungan antara jumlah penduduk dan nilai impor"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">"Jumlah Penduduk"</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y=</span><span class="st">"Nilai Impor"</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"sumber: Badan Pusat Statistik"</span>) <span class="sc">+</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="metode-analisis" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">3.2</span> Metode analisis</h3>
+<p>Metode yang digunakan dalam penelitian ini adalah regresi univariat, yaitu metode analisis yang menguji pengaruh satu variabel independen terhadap satu variabel dependen. Menggunakan teknik kuantitatif deskriptif. Spesifiksi yang digunakan adalah :</p>
+<p><span class="math display">\[
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+\]</span> di mana <span class="math inline">\(y_t\)</span> adalah Jumlah Penduduk dan <span class="math inline">\(x_t\)</span> adalah Nilai Impor.</p>
+</section>
+</section>
+<section id="pembahasan" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">4</span> Pembahasan</h2>
+<section id="pembahasan-masalah" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">4.1</span> Pembahasan masalah</h3>
+<p>Data yang telah dikumpulkan kemudian dilakukan regresi dan menghasilkan:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Coefficients</th>
+<th>Estimate</th>
+<th>Pr &gt; t</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intercept</td>
+<td>0.77820</td>
+<td>0.144</td>
+</tr>
+<tr class="even">
+<td>x</td>
+<td>0.41704</td>
+<td>7.81e-06</td>
+</tr>
+</tbody>
+</table>
+<p>Kemudian hasil dimasukkan kedalam rumus persamaan :</p>
+<p><span class="math display">\[
+y_{t}=\ 0.77820 + \ 0.41704 x +\mu_t
+\]</span></p>
+<p>Koefisien regresi untuk x sebesar 0.41704. Artinya, setiap kenaikan satu satuan x akan meningkatkan y sebesar 0.41704 satuan. rata-rata. Nilai p-value untuk koefisien x sangat kecil (7.81e-06), yang berarti terdapat hubungan yang signifikan antara variabel x dan y, yang artinya ada hubungan yang signifikan antara jumlah penduduk dan nilai impor.</p>
+</section>
+<section id="analisis-masalah" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.2</span> Analisis masalah</h3>
+<p>Hasil regresinya adalah :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>dev<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"dev.xlsx"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>reg<span class="ot">&lt;-</span><span class="fu">lm</span>(y<span class="sc">~</span>x,<span class="at">data=</span>dev)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = y ~ x, data = dev)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.26397 -0.12383 -0.01103  0.10255  0.56299 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  0.77820    0.51845   1.501    0.144    
+x            0.41704    0.07688   5.424 7.81e-06 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.1809 on 29 degrees of freedom
+Multiple R-squared:  0.5036,    Adjusted R-squared:  0.4865 
+F-statistic: 29.42 on 1 and 29 DF,  p-value: 7.808e-06</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>dev<span class="sc">$</span>m<span class="ot">&lt;-</span><span class="fu">resid</span>(reg)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dev<span class="sc">$</span>y,dev<span class="sc">$</span>m,<span class="at">xlab=</span><span class="st">"nilai impor"</span>,<span class="at">ylab=</span><span class="st">"error"</span>,<span class="at">col=</span><span class="st">'pink'</span>,<span class="at">pch=</span><span class="dv">16</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>dev<span class="sc">$</span>m<span class="ot">&lt;-</span><span class="fu">resid</span>(reg)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dev<span class="sc">$</span>x,dev<span class="sc">$</span>m,<span class="at">xlab=</span><span class="st">"jumlah penduduk"</span>,<span class="at">ylab=</span><span class="st">"error"</span>,<span class="at">col=</span><span class="st">'pink'</span>,<span class="at">pch=</span><span class="dv">16</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Hasil regresi menunjukkan model memiliki nilai R-squared sebesar 0.5036, yang berarti bahwa 50.36% variasi y dapat dijelaskan oleh x. Sedangkan nilai F-statistic sebesar 29.42, dengan p-value yang sangat kecil (7.808e-06), yang berarti model signifikan secara keseluruhan.</p>
+</section>
+</section>
+<section id="kesimpulan" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">5</span> Kesimpulan</h2>
+<p>Terdapat hubungan yang signifikan terhadap pengaruh jumlah penduduk terhadap nilai impor, hal ini dapat terjadi karena jumlah penduduk yang besar dapat meningkatkan permintaan akan barang dan jasa, baik yang diproduksi dalam negeri maupun luar negeri. Jika permintaan akan barang impor lebih besar daripada penawaran dalam negeri, maka nilai impor akan meningkat.</p>
+<p>Selain itu, jumlah penduduk dapat mempengaruhi pendapatan per kapita, yang merupakan salah satu indikator kesejahteraan ekonomi. Jika pendapatan per kapita tinggi, maka penduduk cenderung memiliki daya beli yang tinggi dan preferensi yang beragam, yang dapat meningkatkan permintaan akan barang impor yang berkualitas dan bervariasi.</p>
+</section>
+<section id="referensi" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="referensi"><span class="header-section-number">6</span> Referensi</h2>
+<p>Suryanto, E., &amp; SASANA, H. (2017). ANALISIS PENGARUH PDB, POPULASI, KURS DAN INFLASI TERHADAP IMPOR DI INDONESIA (Doctoral dissertation, Fakultas Ekonomika dan Bisnis).</p>
+<p>Indraswari, R. R., &amp; Yuhan, R. J. (2017). JURNAL KEPENDUDUKAN INDONESIA. Jurnal Kependudukan Indonesia| Vol, 12(1), 1-12.</p>
+<p>Sari, R. K. (2014). Analisis impor beras di Indonesia. Economics Development Analysis Journal, 3(2).</p>
+<p>Atmadji, E. (2004). Analisis Impor Indonesia. Economic Journal of Emerging Markets, 9(1).</p>
+<p>Yuliadi, I. (2008). Analisis Impor Indonesia: Pendekatan Persamaan Simultan. Jurnal Ekonomi &amp; Studi Pembangunan, 9(1), 89-104.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
